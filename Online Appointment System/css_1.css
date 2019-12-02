@@ -1,0 +1,302 @@
+body{
+		background-image:linear-gradient(#86849C,#EADBB2);
+	}
+	
+	#mainBody {
+		box-shadow:1px 0px 20px black;
+		height:1000px;
+		width:1220px;
+		margin:5px 0px;
+		border-radius:5px;
+		z-index:2;
+		margin-top:50px;
+		margin-bottom:20px;
+		background-color:white;
+		
+	}
+	#toolBar{
+		width:101.2%;
+		background-image:linear-gradient(#224775,#1795CC);
+		height:40px;
+		margin-top:-50px;
+		margin-left:-10px;
+		font-family:Arial;
+		z-index:1;
+		position:fixed;
+		
+	}
+	
+	#printcmd{
+		height: 30px;
+		width:20px;
+		position:relative;
+		
+		left:25px;
+		padding:12px 0;
+		float:left;
+	}
+	.hovGlow{
+		cursor:pointer;
+		color:white;
+		text-decoration:none;
+		padding:10px 0px;
+		float: right;
+		margin-right:40px;
+		}
+	p{
+		font-size:18px;
+		font-family:Arial;
+	
+	}
+	#drdoLogo{
+		float:left;
+		margin-top:25px;
+		width:350px;
+	}
+	#logo2{
+		width:300px;
+	}
+	#logo1{
+		margin-left:-10px;
+	}
+	#logo3{
+		display:none;
+		margin-left:5px;
+	}
+	#modLogo{
+		float:right;
+	}
+	#logo4{
+		height:150px;
+		width:170px;
+		padding:20px;
+		margin-right:50px;
+	}
+	#divider1{
+		border-top:5px solid #224775;
+		width:1100px;
+		float:left;
+		margin-left:60px;
+		border-radius:5px;
+	}
+	#instructions{
+		float:left;
+		align:center;
+		height:700px;
+		width:600px;
+		
+	}
+	#textInstructions{
+		height:150px;
+		width:450px;
+		float:center;
+		border: 5px solid #224775;
+		margin-top:30px;
+		background-image:linear-gradient(#224775,#1795CC);
+		color:white;
+		border-radius:10px;
+	}
+	#divider2{
+		height:720px;
+		border-right:5px solid #224775;
+		float:left;
+		margin-top:15px;
+		margin-left:10px;
+		border-radius:20px;
+	}
+	
+	#login{
+		width:500px;
+		height:290px;
+		
+		float:left;
+		align:center;
+		margin-top:30px;
+		margin-left:30px;
+	}
+	#userType{
+		height:50px;
+		width:450px;
+		margin-top:20px;
+		
+		
+	}
+	#pButt{
+		height:34px;
+		width:225px;
+		background-color:#2979FF;
+		float:left;
+		padding-top:16px;
+		border-top-left-radius:10px;
+		border-bottom-left-radius:10px;
+		color:white;
+		font-size:18px;
+		font-family:Arial;
+		cursor:pointer;
+	}
+	#dButt{
+		height:34px;
+		width:225px;
+		background-color:#224775;
+		float:left;
+		padding-top:16px;
+		border-top-right-radius:10px;
+		border-bottom-right-radius:10px;
+		color:white;	
+		font-size:18px;
+		font-family:Arial;
+		cursor:pointer;
+	}
+	#plogin{
+		margin-top:50px;
+		
+	}
+	#dlogin{
+		margin-top:50px;
+		display:none;
+	}
+	.email{
+		width:450px;
+		font-size:20px;
+		height:26px;
+		border:none;
+		outline:none;
+		border-bottom:3px solid #224775;
+	}
+	.password{
+		width:450px;
+		font-size:20px;
+		height:26px;
+		border:none;
+		border-bottom:3px solid #224775;
+		margin-top:20px;
+		outline:none;
+	}
+	#psubmit{
+		width:450px;
+		height:40px;
+		background-image:linear-gradient(#224775,#1795CC);
+		color:white;
+		border:none;
+		margin-top:20px;
+		font-size:20px;
+		cursor:pointer;
+	}
+	#rsubmit{
+		width:450px;
+		height:40px;
+		background-image:linear-gradient(#224775,#1795CC);
+		color:white;
+		border:none;
+		margin-top:20px;
+		font-size:20px;
+		cursor:pointer;
+	}
+	#dsubmit{
+		width:450px;
+		height:40px;
+		background-image:linear-gradient(#224775,#1795CC);
+		color:white;
+		border:none;
+		margin-top:20px;
+		font-size:20px;
+		cursor:pointer;
+	}
+	#divider3{
+		height:0px;
+		width:500px;
+		border-top:5px solid #224775;
+		border-radius:10px;
+		float:left;
+		margin-left:30px;
+		margin-top:40px;
+	}
+	#register{
+        height:150px;
+	    
+        width:500px;
+        float:left;
+		align:center;
+		margin-top:20px;
+		margin-left:30px;
+     }
+	 
+	 #registername{
+	 float:left;
+	 margin:5px;
+	 margin-left:25px;
+	 margin-bottom:0px;
+	 
+	 }
+	 .name{
+		float:left;
+		width:136.6px;
+		margin-right:20px;
+		margin-left:0px;
+		margin-bottom:0px;
+		border:none;
+		border-bottom: 3px solid #224775;  
+		outline:none;
+	 }
+	 
+	 .formtype1{
+		width:450px;
+		font-size:14px;
+		border:none;
+		height:26px;
+		margin-top:5px;
+		border-bottom:3px solid #224775;
+		outline:none;
+	 }
+	input[type=number]::-webkit-inner-spin-button, 
+	input[type=number]::-webkit-outer-spin-button { 
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		margin: 0; 
+	}
+	#errorDiv{
+		
+		
+		background-color:rgba(255,255,255,0.5);
+		font-family:Arial;
+		height:100%;
+		width:100%;
+		position:fixed;
+		left:0px;
+		top:0px;
+		display:none;
+	}
+	#closeErr1{
+		
+		margin:auto;
+		margin-top:150px;
+		padding-bottom:50px;
+		width:450px;
+		font-size:20px;
+		height:auto;
+		background-color:#224775;
+		color:white;
+		border-bottom-right-radius:10px;
+		border-bottom-left-radius:10px;
+		border-top-left-radius:10px;
+		border:2px solid black;
+	}
+	#closeErr{
+		float:right;
+		height:30px;
+		width:30px;
+		background-color:red;
+		border:1px solid black;
+		cursor:pointer;
+	}
+	#errorTop{
+		background-color:white;
+		height:31px;
+		width:450px;
+		
+		color:#224775;
+		text-align:left;
+		border:1px solid black;
+		border-top-left-radius:10px;
+	}

@@ -1,0 +1,386 @@
+<html>
+<head><title>Online Appointment | Defence Research & Development Organisation DRDO
+<meta charset="utf-8">
+</title>
+<link rel="icon" type="image/png" href="logo-image.jpg" >
+</head>
+<body>
+<script src="jquery-3.4.1.js"></script>
+<style type="text/css">
+	#mainBody {
+		box-shadow:1px 0px 10px black;
+		height:5000px;
+		width:1220px;
+		margin:5px 0px;
+		border-radius:5px;
+		z-index:2;
+		
+	}
+	#toolBar{
+		width:101.2%;
+		background-color:#224775;
+		height:40px;
+		margin-top:-10px;
+		margin-left:-10px;
+		font-family:Arial;
+		z-index:1;
+	}
+	#homeBut{
+		height:50px;
+		width:50px;
+		position:relative;
+		margin:9px;
+	}
+	#printcmd{
+		height: 30px;
+		width:20px;
+		position:relative;
+		
+		left:25px;
+		padding:12px 0;
+		float:left;
+	}
+	.hovGlow{
+		color:white;
+		text-decoration:none;
+		padding:10px 20px;
+		float: right;
+		}
+	p{
+		font-size:18px;
+		font-family:Arial;
+	
+	}
+	#drdoLogo{
+		float:left;
+		margin-top:15px;
+		width:350px;
+	}
+	#logo2{
+		width:300px;
+	}
+	#logo1{
+		margin-left:-10px;
+	}
+	#logo3{
+		display:none;
+		margin-left:5px;
+	}
+	#modLogo{
+		float:right;
+	}
+	#logo4{
+		height:150px;
+		width:170px;
+		padding:20px;
+		margin-right:50px;
+	}
+	#divider1{
+		border-top:5px solid #224775;
+		width:1100px;
+		float:left;
+		margin-left:60px;
+		border-radius:5px;
+	}
+	#instructions{
+		float:left;
+		align:center;
+		height:700px;
+		width:600px;
+		
+	}
+	#textInstructions{
+		height:150px;
+		width:450px;
+		float:center;
+		border: 5px solid #224775;
+		margin-top:30px;
+		background-color:#224775;
+		color:white;
+		border-radius:10px;
+	}
+	#divider2{
+		height:600px;
+		border-right:5px solid #224775;
+		float:left;
+		margin-top:15px;
+		margin-left:10px;
+		border-radius:20px;
+	}
+	
+	#login{
+		width:500px;
+		height:290px;
+		
+		float:left;
+		align:center;
+		margin-top:30px;
+		margin-left:30px;
+	}
+	#userType{
+		height:50px;
+		width:450px;
+		margin-top:20px;
+		
+		
+	}
+	#pButt{
+		height:34px;
+		width:225px;
+		background-color:#2979FF;
+		float:left;
+		padding-top:16px;
+		border-top-left-radius:10px;
+		border-bottom-left-radius:10px;
+		color:white;
+		font-size:18px;
+		font-family:Arial;
+		
+	}
+	#dButt{
+		height:34px;
+		width:225px;
+		background-color:#224775;
+		float:left;
+		padding-top:16px;
+		border-top-right-radius:10px;
+		border-bottom-right-radius:10px;
+		color:white;	
+		font-size:18px;
+		font-family:Arial;
+	}
+	#plogin{
+		margin-top:50px;
+		
+	}
+	#dlogin{
+		margin-top:50px;
+		display:none;
+	}
+	.email{
+		width:450px;
+		font-size:20px;
+		height:26px;
+		border:none;
+		border-bottom:3px solid #224775;
+	}
+	.password{
+		width:450px;
+		font-size:20px;
+		height:26px;
+		border:none;
+		border-bottom:3px solid #224775;
+		margin-top:20px;
+	}
+	#psubmit{
+		width:450px;
+		height:40px;
+		background-color:#224775;
+		color:white;
+		border:none;
+		margin-top:20px;
+		font-size:20px;
+	}
+	#dsubmit{
+		width:450px;
+		height:40px;
+		background-color:#224775;
+		color:white;
+		border:none;
+		margin-top:20px;
+		font-size:20px;
+	}
+	#divider3{
+		height:0px;
+		width:500px;
+		border-top:5px solid #224775;
+		border-radius:10px;
+		float:left;
+		margin-left:40px;
+		margin-top:20px;
+	}
+	#register{
+        height:350px;
+	    
+        width:500px;
+        float:left;
+		align:center;
+		margin-top:30px;
+		margin-left:40px;
+     }
+	 
+	 #registername{
+	 float:left;
+	 margin:25px;
+	 
+	 
+	 }
+	 .name{
+		float:left;
+		width:130px;
+		margin:10px;
+		border:none;
+		border-bottom: 3px solid #224775;  
+	 }
+	 #remail{
+		width:430px;
+		font-size:14px;
+		height:26px;
+		border:none;
+		border-bottom:3px solid #224775;
+	 
+	 }
+</style>
+
+<div id="toolBar">
+
+<a id="printcmd" href="javascript:window.print()"><img src="print_cmd.gif"></a>
+<a class="hovGlow" id="decSize">A-</a>
+<a class="hovGlow" id="resSize">A</a>
+<a class="hovGlow" id="incSize">A+</a>
+<a class="hovGlow" id="contact" href="https://www.drdo.gov.in/drdo/English/index.jsp?pg=contact.jsp">Contact Us</a>
+<a class="hovGlow" id="feedback"href="https://www.drdo.gov.in/drdo/English/index.jsp?pg=public.jsp">Feedback</a>
+
+</div>
+<div align=center>
+	<div id="mainBody" >
+		<div id="logobar">
+	
+			<a id="drdoLogo" href="https://www.drdo.gov.in/drdo/English/index.jsp?pg=homebody.jsp">
+				<img src="logo-image.jpg" id="logo1">
+				<img src="drdo-home2.jpg" id="logo2">
+				<img src="drdo-home1.jpg" id="logo3">
+			</a>
+
+			<a id="modLogo" href="https://mod.gov.in/">
+				<img src="mod.jpg" id="logo4">
+			</a>
+		</div>
+		<a id="divider1"></a>
+		<div style="padding-top:50px;">
+			<h1>Online Appointment System</p>
+		</div>
+		
+		<div id="instructions">
+			<div id="textInstructions">
+				<h1>Need an appointment?</h1>
+				<p>Now do that in just a <br>few quick steps.</p>
+			</div>
+			<img src="instructions.jpg">
+		</div>
+		<a id="divider2"></a>
+		<div id="login">
+			<div id="userType">
+				<div id="pButt">
+					Patient
+				</div>
+				<div id="dButt">
+					Doctor
+				</div>
+			</div>
+			<div style="float:left;height:50px;width:400px; "></div>
+			<div id="plogin">
+			<form>
+				<input type="password" class="password" name="ppass" placeholder="Patient Password">
+				<input type="text" class="email" name="pemail" placeholder="Patient Email ID">
+				<input type="submit" id="psubmit" value="Login">
+			</form>
+			</div>
+			<div id="dlogin">
+				<form>
+					<input type="text" class="email" name="demail" placeholder="Doctor Email ID">
+					<input type="password" class="password" name="dpass" placeholder="Doctor Password">
+					<input type="submit" id="dsubmit" value="Login">
+				</form>
+			</div>
+		</div>
+		<div id="divider3"></div>
+		
+		<div id="register">
+			<h1 style="color:#224775; float:left;"> Register Here:</h1> 
+			<form>
+			<div id="registername">
+				<input type="text" class="name" name="fname" placeholder="First Name"  >
+				<input type="text" class="name" name="mname" placeholder="Middle Name"  >
+				<input type="text" class="name" name="lname" placeholder="Last Name"  >
+				
+			</div>
+			<input type="text" class="name" name="cnum" placeholder="Contact No."  >
+				<input type="email" id="remail" name="pemail" placeholder="Email ID">
+				<input type="submit" id="psubmit" value="Register">
+			</form>
+			
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$("#incSize").hover(function(){
+	$("#incSize").css("color","#FA925B")},
+	function(){
+	$("#incSize").css("color","white")}
+	)
+$("#drdoLogo").hover(function(){
+	$("#logo2").css("display","none")
+	$("#logo3").css("display","inline")
+	},
+	function(){
+	$("#logo2").css("display","inline")
+	$("#logo3").css("display","none")
+	}
+	)
+$("#incSize").click(function(){
+		var currentSize = $('p').css('font-size');
+		//alert(currentSize);
+		if(currentSize>="22px")
+		{alert("Woah!! Slow down there Chief!!")}
+		else{
+		var currentSize = parseFloat(currentSize)*1.2;
+		$('p').css('font-size', currentSize)};})
+		
+$("#decSize").click(function(){
+		var currentSize = $('p').css('font-size');
+		if(currentSize<="10px"){
+		alert("Even Senor Chang can't read that.");}
+		else{
+		var currentSize = parseFloat(currentSize)/1.2;
+		$('p').css('font-size', currentSize);}})
+$("#resSize").click(function(){
+		$('p').css('font-size', "18px");})
+$("#decSize").hover(function(){
+	$("#decSize").css("color","#FA925B")},
+	function(){
+	$("#decSize").css("color","white")}
+	)
+$("#resSize").hover(function(){
+	$("#resSize").css("color","#FA925B")},
+	function(){
+	$("#resSize").css("color","white")}
+	)
+$("#contact").hover(function(){
+	$("#contact").css("color","#FA925B")},
+	function(){
+	$("#contact").css("color","white")}
+	)
+$("#feedback").hover(function(){
+	$("#feedback").css("color","#FA925B")},
+	function(){
+	$("#feedback").css("color","white")}
+	)
+$("#pButt").click(function(){
+	$("#dlogin").css("display","none")
+	$("#plogin").css("display","inline")
+	$("#pButt").css("background-color","#2979FF")
+	$("#dButt").css("background-color","#224775")	
+})
+$("#dButt").click(function(){
+	$("#plogin").css("display","none")
+	$("#dlogin").css("display","inline")
+	$("#pButt").css("background-color","#224775")
+	$("#dButt").css("background-color","#2979FF")
+	
+})
+</script>
+
+
+</body>
+</html>
